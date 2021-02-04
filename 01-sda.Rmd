@@ -1,0 +1,7 @@
+# Statistical data analysis {#sda}
+
+## Causal design patterns for data analysts
+
+> keywords: #causal, #data, #tutorial
+
+Blog post by Emily Riederer ([Link](https://emilyriederer.netlify.app/post/causal-design-patterns/?s=09))
