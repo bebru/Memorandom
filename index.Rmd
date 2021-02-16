@@ -16,5 +16,5 @@ description: "Random memos about R, statistics, databases"
 
 This is mostly me reading the Internet and copying things for later use.
 I will do my best to give credit where credit's due.
-Covered topics are the use of the statistical software package R [@R-base], statistics, databases, and the like.
+Covered topics are the use of the statistical software package R [@R-base], statistics, databases, health care expenditures and use, claims data, and the like.
 It's written with the help of the R package `bookdown` [@bookdown2016; @R-bookdown].

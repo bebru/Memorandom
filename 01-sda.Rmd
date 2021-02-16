@@ -1,7 +1,24 @@
 # Statistical data analysis {#sda}
 
-## Causal design patterns for data analysts
+## Causal Inference
 
-> keywords: #causal, #data, #tutorial
+### Causal design patterns for data analysts
+
+> keywords: #blog, #causal, #data, #tutorial, #R
 
 Blog post by Emily Riederer ([Link](https://emilyriederer.netlify.app/post/causal-design-patterns/?s=09))
+
+### Causal Inference for The Brave and True
+
+> keywords: #book, #causal, #econometrics, #prediction, #python, #paneldata, #timeseries, #mixedmodel
+
+Free ebook on Github pages by Matheus Facure Alves about causal inference, with code in python. ([Link](https://matheusfacure.github.io/python-causality-handbook/landing-page.html))
+
+## Health economics
+
+### Health Econometrics Using Stata
+
+> keywords: #book, #econometrics, #healtcareexpenditure, #stata
+
+[Health Econometrics Using Stata](https://www.stata.com/bookstore/health-econometrics-using-stata/) by Partha Deb, Edward C. Norton, and Willard G. Manning provides an excellent overview of the methods used to analyze data on healthcare expenditure and use. With Stata code, and data free to [download](https://www.stata-press.com/data/heus.html).
+

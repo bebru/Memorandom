@@ -1,3 +1,10 @@
-# Literature
+# R packages
 
-Here is a review of existing methods.
+## Health economics
+
+### `hesim`
+
+> keywords: #healtheconomics, #model, #simulation
+
+* Introduction ([Link](https://cran.r-project.org/web/packages/hesim/vignettes/intro.html))
+* Website ([Link](https://hesim-dev.github.io/hesim/))
