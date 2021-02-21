@@ -1,0 +1,16 @@
+# Books online {#books}
+
+## Data Science
+
+### Modern Data Science with R
+
+> keywords: #purrr, #tidymodels, #regex, #simulation
+
+* Authors: Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton
+* [Link](https://mdsr-book.github.io/mdsr2e/)
+* Topics, among others:
+  * Grammar of Graphics
+  * Iteration with `purrr`
+  * Ethics
+  * Predictive modeling
+  * Simulation

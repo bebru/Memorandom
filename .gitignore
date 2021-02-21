@@ -39,3 +39,6 @@ _bookdown_files/
 
 # R Environment Variables
 .Renviron
+
+# Output files
+pdf/

@@ -1,5 +1,15 @@
 # Statistical data analysis {#sda}
 
+## Linear Regression
+
+### A simple way to assess inference methods
+
+> keywords: #regression, #linear, #inference, #cluster, #robust,  #differences-in-differences, #stratification
+
+Article by Bruno Ferman ([Link](https://arxiv.org/pdf/1912.08772.pdf))
+
+* **Abstract:** We propose a simple way to assess whether inference methods are reliable.  The assess-ment can detect problems when the asymptotic theory that justifies the inference method isinvalid and/or provides a poor approximation given the design of the empirical application.It can be easily applied to a wide range of applications.  We show that, despite being a simpleidea and despite its limitations, this assessment has the potential of substantially reducingthe number of papers that are published based on misleading inference, if it becomes widelyused by applied researchers.  We analyze in detail the cases of differences-in-differences withfew treated clusters, shift-share designs, weighted OLS, stratified experiments, and matching estimators.
+
 ## Causal Inference
 
 ### Causal design patterns for data analysts
@@ -14,6 +24,15 @@ Blog post by Emily Riederer ([Link](https://emilyriederer.netlify.app/post/causa
 
 Free ebook on Github pages by Matheus Facure Alves about causal inference, with code in python. ([Link](https://matheusfacure.github.io/python-causality-handbook/landing-page.html))
 
+### We all have secret futures
+
+> keywords: #personalizedmedicine, #philosophyofscience
+
+Blog post by Darren Dahly ([Link](https://mdsr-book.github.io/mdsr2e/))
+
+* "It is hopefully obvious to you that this treatment effect is not something we can actually ever know, since it’s no more possible to go back in time to change your treatment as it is to go back and zig instead of zag."
+* "So there is no such thing as personalized medicine."
+
 ## Health economics
 
 ### Health Econometrics Using Stata
@@ -22,3 +41,10 @@ Free ebook on Github pages by Matheus Facure Alves about causal inference, with 
 
 [Health Econometrics Using Stata](https://www.stata.com/bookstore/health-econometrics-using-stata/) by Partha Deb, Edward C. Norton, and Willard G. Manning provides an excellent overview of the methods used to analyze data on healthcare expenditure and use. With Stata code, and data free to [download](https://www.stata-press.com/data/heus.html).
 
+## Philsophy of science
+
+### Error and the Growth of Experimental Knowledge
+
+> keywords: #book
+
+Book by Deborah G. Mayo ([Link](https://errorstatistics.files.wordpress.com/2020/10/egek-pdf-red.pdf))

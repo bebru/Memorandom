@@ -1,5 +1,19 @@
 # R packages
 
+## Descriptive statistics
+
+### `tableone`
+
+>keywords: #tableone, #summary, #table
+
+### `summarytools`
+
+>keywords: #summary, #table
+
+### `gtsummary`
+
+>keywords: #summary, #table, #regression
+
 ## Health economics
 
 ### `hesim`
