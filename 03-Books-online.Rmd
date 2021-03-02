@@ -14,3 +14,14 @@
   * Ethics
   * Predictive modeling
   * Simulation
+
+### Interpretable Machine Learning
+
+> keywords: #machinelearning
+
+* Author: Christoph Molnar
+* [Link](https://christophm.github.io/interpretable-ml-book/index.html)
+* Models:
+  * LM, GLM, GAM
+  * Decision Tress
+  * many others
