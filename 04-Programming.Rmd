@@ -1,0 +1,91 @@
+# Programming {#programming}
+
+## R
+
+```{r setup, echo=FALSE, error=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(here)
+library(patchwork)
+library(palmerpenguins)
+
+# default theme for ggplot
+theme_set(theme_bw())
+
+# do not output errors and warnings in Markdown
+knitr::opts_chunk$set(error = FALSE, warning = FALSE)
+```
+
+
+### Graphics
+
+#### ggplot2
+
+##### Defaults
+
+```{r, eval=FALSE}
+# Default theme
+theme_set(theme_bw())
+```
+
+
+##### Save to file system
+
+```{r, eval=FALSE}
+plt_spec_depth <- 
+  penguins %>% 
+  ggplot(aes(x = species, y = bill_depth_mm)) +
+  geom_boxplot()
+
+ggsave(here("figs", "plt_spec_depth.tiff"), plot = plt_spec_depth, device = "tiff", 
+       width = 5, height = 5, dpi = 300, compression = "lzw")
+
+plt_spec_depth
+```
+
+##### Rotate axis lables
+
+```{r}
+penguins %>% 
+  ggplot(aes(x = species, y = bill_depth_mm)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+```
+
+##### Zoom axis limits
+
+```{r}
+no_zoom <- 
+  penguins %>% 
+  ggplot(aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point()+
+  ggtitle("No zoom")
+
+zoom <- 
+  penguins %>% 
+  ggplot(aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point() +
+  coord_cartesian(xlim = c(40,50)) +
+  ggtitle("Zoom x-axis to c(40,50)")
+
+no_zoom + zoom
+```
+
+### Reporting
+
+#### R Markdown
+
+##### Defaults
+
+```{r, eval=FALSE}
+# Do not output code
+knitr::opts_chunk$set(echo = FALSE)
+
+# Do not output errors and warnings
+knitr::opts_chunk$set(error = FALSE, warning = FALSE)
+
+# Produce self-contained html files
+knitr::opts_chunk$set(cache.path = 'report_cache/')
+```
+
+I didn't find the source for the self-contained html file anymore, but this helped producing one at least once. 
+Should be more like a last resort than a default, though.
