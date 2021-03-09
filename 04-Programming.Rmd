@@ -89,3 +89,36 @@ knitr::opts_chunk$set(cache.path = 'report_cache/')
 
 I didn't find the source for the self-contained html file anymore, but this helped producing one at least once. 
 Should be more like a last resort than a default, though.
+
+### Objects
+
+#### Compare objects
+
+##### Hash functions
+
+To compare whether to files on the file system are identical, the MD5 hash function can be used (other hash functions as SHA1, SHA256 etc. could be used as well, bud MD5 should be one of the faster ones).
+To not just hash the path, a connection to the file has to be established (with `file()`).
+`file()` has several `modes` in which reading and writing can be done.
+The hashed values will be different depending which mode is used.
+
+> Whether the hashed values of the different files match may depend on the used mode.
+
+Source: [Link](https://stackoverflow.com/questions/59833931/md5-file-hash-functions-in-r-returning-different-values)
+
+```{r, eval=FALSE}
+md5_orig <- md5(file(orig, open = "rt"))
+md5_rebuild <- md5(file(rebuild, open = "rt"))
+  
+identical(md5_orig, md5_rebuild)
+```
+
+##### Visual comparison
+
+R objects can be visually compared with the package `diffobj`.
+
+```{r, eval=FALSE}
+mod <- penguins
+mod$sex <- sample(mod$sex, length(mod$sex))
+diffobj::diffObj(penguins, mod)
+```
+
