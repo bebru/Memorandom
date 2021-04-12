@@ -90,7 +90,26 @@ knitr::opts_chunk$set(cache.path = 'report_cache/')
 I didn't find the source for the self-contained html file anymore, but this helped producing one at least once. 
 Should be more like a last resort than a default, though.
 
+##### File encoding
+
+Blog post by Yihui Xie, why every R Markdown file should be encoded in UTF-8: [UTF-8, and UTF-8 only, or we cannot be friends](https://yihui.org/en/2018/11/biggest-regret-knitr/)
+
 ### Objects
+
+#### Description
+
+##### Number of unique values per variable in a data frame
+
+This is like `table()`, and loops over each variable of a data frame.
+Using *tidy evaluation*, code from the dplyr vignette [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html). 
+
+
+```{r, eval=FALSE}
+for (var in names(penguins)) {
+  penguins %>% count(.data[[var]]) %>% print()
+}
+```
+
 
 #### Compare objects
 

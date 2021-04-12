@@ -10,6 +10,25 @@ Article by Bruno Ferman ([Link](https://arxiv.org/pdf/1912.08772.pdf))
 
 * **Abstract:** We propose a simple way to assess whether inference methods are reliable.  The assess-ment can detect problems when the asymptotic theory that justifies the inference method isinvalid and/or provides a poor approximation given the design of the empirical application.It can be easily applied to a wide range of applications.  We show that, despite being a simpleidea and despite its limitations, this assessment has the potential of substantially reducingthe number of papers that are published based on misleading inference, if it becomes widelyused by applied researchers.  We analyze in detail the cases of differences-in-differences withfew treated clusters, shift-share designs, weighted OLS, stratified experiments, and matching estimators.
 
+### Analysis of residuals
+
+#### Generalised linear models
+
+> keywords: #regression, #linear, #residuals
+
+Answer on Cross Validated ([Link](https://stats.stackexchange.com/a/139624))
+
+* The standard residual plots (`plot(glm_object)`) do not make much sense with glm models, since there is no `plot.glm` method, and `plot.lm` is called.
+* Short explanation of what to look at if the model was an lm object is also included.
+* There are specific diagnostic plots for glm objects in the `boot`package: `glm.diag.plots`.
+
+### Linear mixed models
+
+> keywords: #regression, #linear, #hierarchical, #mixed
+
+* Presentation on [Linear mixed models in R](https://athanasiamo.github.io/LME_introduction_workshop/slides/lme_UseR_Oslo_2019.html#1), by Athanasia Monika Mowinckel
+* Blog post [Introduction to linear mixed models](https://gkhajduk.github.io/2017-03-09-mixed-models/), by Gabriela K. Hayduk
+
 ## Causal Inference
 
 ### Causal design patterns for data analysts
