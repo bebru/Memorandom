@@ -3,7 +3,9 @@ title: "Memorandom"
 author: "Beat Brüngger"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: 
+    bookdown::gitbook:
+      toc_depth: 4
 documentclass: book
 bibliography: [memorandom.bib]
 biblio-style: apalike

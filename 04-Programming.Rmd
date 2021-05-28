@@ -131,6 +131,23 @@ md5_rebuild <- md5(file(rebuild, open = "rt"))
 identical(md5_orig, md5_rebuild)
 ```
 
+###### function which takes two file paths as input
+
+```{r}
+comp_files_md5 <- function(orig, rebuild) {
+  con_orig <- file(orig, open = "rt")
+  md5_orig <- md5(con_orig)
+  con_rebuild <- file(rebuild, open = "rt")
+  md5_rebuild <- md5(con_rebuild)
+  
+  close(con_orig)
+  close(con_rebuild)
+  
+  identical(md5_orig, md5_rebuild)
+}
+```
+
+
 ##### Visual comparison
 
 R objects can be visually compared with the package `diffobj`.
@@ -139,5 +156,19 @@ R objects can be visually compared with the package `diffobj`.
 mod <- penguins
 mod$sex <- sample(mod$sex, length(mod$sex))
 diffobj::diffObj(penguins, mod)
+```
+
+## Regular expression
+
+### Find 'word' not followed by a certain character
+
+> keywords: #regex
+
+Source: [Link](https://stackoverflow.com/questions/31201690/find-word-not-followed-by-a-certain-character)
+
+The (?!@) negative look-ahead will make word match only if @ does not appear immediately after word:
+
+```{}
+word(?!@)
 ```
 

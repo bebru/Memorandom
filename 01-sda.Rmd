@@ -22,6 +22,12 @@ Answer on Cross Validated ([Link](https://stats.stackexchange.com/a/139624))
 * Short explanation of what to look at if the model was an lm object is also included.
 * There are specific diagnostic plots for glm objects in the `boot`package: `glm.diag.plots`.
 
+### Calculate confidence intervals in generalised linear models
+
+> keywords: #regression, #inference, #glm
+
+Blog post by Gavin Simpson: Confidence intervals for GLMs ([Link](https://fromthebottomoftheheap.net/2018/12/10/confidence-intervals-for-glms/))
+
 ### Linear mixed models
 
 > keywords: #regression, #linear, #hierarchical, #mixed

@@ -1,0 +1,17 @@
+# Varia
+
+## Editors, IDEs
+
+### R Studio
+
+##### Colors in console
+
+The colors used in the console, eg. for negative numbers, are set via the packages `pillar` and `crayon`.
+For negative numbers, the `crayon::red()` doesn't work well with dark themes (see [here](https://github.com/tidyverse/tibble/issues/357), and maybe there is help underway, see [here](https://github.com/r-lib/pillar/issues/82) and [here](https://github.com/r-lib/cli/issues/204)).  
+For now, the easiest way to overcome the issue is to set off the use of red in negative numbers while using tibbles, by setting the respective `pillar` option, eg. in the .Rprofile file:
+
+```{r, eval=FALSE}
+options(pillar.neg = FALSE)
+```
+
+
